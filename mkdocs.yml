@@ -24,7 +24,6 @@ markdown_extensions:
   - def_list
   - md_in_html
   - mkdocs-click
-  - pymdownx.snippets
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
@@ -34,6 +33,7 @@ markdown_extensions:
   - pymdownx.snippets:
       base_path: '.'
       check_paths: true
+      url_download: true
   - pymdownx.highlight:
       use_pygments: true
   - pymdownx.tabbed:
