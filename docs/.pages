@@ -1,0 +1,12 @@
+nav:
+  - Home: index.md
+#  - Run: run.md
+#  - Configuration: configuration.md
+  - Components: components
+  - User Manual: guide-user
+  - Administrative Guide: guide-adm
+  - Development Guide: guide-dev
+  - Glossary: glossary/
+#  - Examples: stacks
+  - Tags: tags
+  - Links: links
