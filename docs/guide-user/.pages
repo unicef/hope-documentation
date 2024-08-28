@@ -1,2 +1,8 @@
 nav:
-  - ...
+  - Program Management: program.md
+  - Beneficiary Management: people.md
+  - Targeting: targeting.md
+  - Payment Module: pm.md
+  - Payment Verification: pv.md
+  - Grievance: grievance.md
+  - User Management: user.md

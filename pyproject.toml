@@ -24,6 +24,7 @@ dependencies = [
     "mkdocs-embed-external-markdown>=3.0.2",
     "mkdocs-include-markdown-plugin>=6.2.2",
     "mkdocs-alias-plugin>=0.8.1",
+    "pillow>=10.4.0",
 ]
 requires-python = "==3.12.*"
 readme = "README.md"

@@ -1,21 +1,21 @@
 ---
-description:  ""
+description: ""
 template: term.html
 ---
 
+
+
+
+
+
+
 # Cash Plan
-
-# Payment Plan
-
-
 # Fund Commitment
-
 # Fund reservation
-
+# Payment Instructions
+# Payment Plan
 # Payment Verification
-
 # Purchase Order
-
 
 # FSP
 

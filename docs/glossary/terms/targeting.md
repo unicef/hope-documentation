@@ -16,3 +16,6 @@ Households or Individuals who are eligible for assistance based programme&apos;s
 Sometimes used as a term pre-intervention to talk about who we are targeting.</p>
         <p>In other cases targeting is the term to limit set of beneficiaries within
           an intervention.
+
+# HouseHold Selection
+Single Entry of a Target Population. It become a [Payment Record](Payment Record)
