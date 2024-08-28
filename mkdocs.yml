@@ -1,7 +1,7 @@
 copyright: Copyright &copy; 2020-2024 UNICEF
 dev_addr: 127.0.0.1:8001
 docs_dir: docs
-edit_uri: 'blob/develop/docs/'
+edit_uri: 'blob/main/docs/'
 repo_url: https://github.com/unicef/hope-documentation
 site_author: HOPE Team
 site_description: ""
