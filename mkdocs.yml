@@ -101,6 +101,7 @@ plugins:
   - gen-files:
       scripts:
         - docs/_scripts/build_glossary.py
+        - docs/_scripts/get_settings.py
   - autorefs
   - awesome-pages
 #  - ezglossary

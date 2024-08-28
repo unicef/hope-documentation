@@ -1,2 +1,4 @@
 nav:
-  - ...
+  - Dependencies: dependencies.md
+  - Settings: settings.md
+  - Docker: docker.md
