@@ -14,3 +14,7 @@ Administration:
 System:
 - changed-files:
   - any-glob-to-any-file: 'docs/_*'
+
+Payment-Gateway:
+- changed-files:
+  - any-glob-to-any-file: 'docs/components/pg'
