@@ -33,14 +33,18 @@ for filename in terms_dir.iterdir():
     if pg.meta.get("template", "") != "term.html":
         raise Exception(f"File {filename} does not have a template meta descriptor")
     for t in pg.toc.items:
-        LINE = PAT.format(id=filename.stem, title=t.title, url=f"{pg.url}{t.url}", description=pg.meta.get("description", ""))
+        LINE = PAT.format(id=filename.stem, title=t.title, url=f"{pg.url}{t.url}",
+                          description=pg.meta.get("description", '').strip() or '&lt; missing &gt;')
         TERMS[t.title] = LINE
-
 
 for term in sorted(TERMS.keys()):
     TABLE.append(TERMS[term])
 
 with mkdocs_gen_files.open(index, "w") as f:
     f.writelines("\n".join(TABLE))
+#
+# with mkdocs_gen_files.open(index, "w") as f:
+#     for term in sorted(TERMS.keys()):
+#         f.write(f"{TERMS[term]}")
 
 mkdocs_gen_files.set_edit_path(index, "build_glossary.py")

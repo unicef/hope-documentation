@@ -4,6 +4,7 @@ import requests
 import mkdocs_gen_files
 
 
+
 MASK="""
 ### {name}
 
@@ -36,13 +37,4 @@ for term in sorted(TERMS.keys()):
 
 with mkdocs_gen_files.open(index, "w") as f:
     f.writelines("\n".join(TABLE))
-print(TERMS)
 mkdocs_gen_files.set_edit_path(index, "build_glossary.py")
-
-
-# t = ast.parse(res.text)
-# v=get_variables(t)
-# print(v)
-#
-# breakpoint()
-print("=========")

@@ -14,8 +14,8 @@ extra_javascript:
   - _theme/js/js.cookie.js
   - _theme/js/address.js
 exclude_docs: |
-  _includes/
-  _docs
+  _includes/*
+  _docs/*
 
 markdown_extensions:
   - abbr
@@ -31,9 +31,11 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.details
   - pymdownx.snippets:
-      base_path: '.'
+      base_path: 'docs'
       check_paths: true
       url_download: true
+      auto_append:
+        - _includes/abbreviations.md
   - pymdownx.highlight:
       use_pygments: true
   - pymdownx.tabbed:
@@ -65,8 +67,11 @@ theme:
   hljs_languages:
     - yaml
     - django
+  extra:
+    version:
+      provider: mike
+      alias: true
   palette:
-
     # Palette toggle for light mode
     - scheme: default
       primary: light blue
@@ -98,13 +103,17 @@ theme:
 
 plugins:
   - alias
-  - gen-files:
-      scripts:
-        - docs/_scripts/build_glossary.py
-        - docs/_scripts/get_settings.py
+#  - gen-files:
+#      scripts:
+#        - docs/_scripts/build_glossary.py
+#        - docs/_scripts/get_settings.py
   - autorefs
   - awesome-pages
-#  - ezglossary
+  - ezglossary:
+      templates: docs/_theme/glossary
+      inline_refs: none
+      list_definitions: false
+      list_references: false
   - ezlinks
   - link-marker
   - mkdocstrings

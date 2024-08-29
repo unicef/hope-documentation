@@ -1,0 +1,16 @@
+
+User:
+- changed-files:
+  - any-glob-to-any-file: 'docs/guide-user'
+
+Development:
+- changed-files:
+  - any-glob-to-any-file: 'docs/guide-dev'
+
+Administration:
+- changed-files:
+  - any-glob-to-any-file: 'docs/guide-adm'
+
+System:
+- changed-files:
+  - any-glob-to-any-file: 'docs/_*'

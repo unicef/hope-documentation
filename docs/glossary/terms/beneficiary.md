@@ -1,6 +1,14 @@
 ---
-description:  "unique address identity for a User"
+description:  "----"
 template: term.html
+title: Beneficiaries
+terms:
+  - glossary: 
+    - Beneficiary
+    - Withdrawn
+    - Duplicate
+
+
 ---
 
 # Beneficiary
@@ -14,4 +22,4 @@ When a beneficiary is marked as withdrawn, it means they will no longer be eligi
 
 # Duplicate
 
-see [Deduplication](deduplication)
+see <glossary:Deduplication>

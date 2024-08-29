@@ -4,6 +4,10 @@ template: term.html
 tags:
   - program
   - cycle
+terms:
+  - glossary: 
+    - Program
+    - Cycle
 ---
 
 # Program
@@ -22,10 +26,10 @@ The Cycle must respect the followinf rules:
 1. It is NOT possible to pay the SAME HH within the same Cycle (even in different TP/PP) (Failed payment makes an exception)
 1. Cannot exist overlapping Cycles
 1. It is possible to create a new Cycle ONLY with "start_date" AFTER the most recent “Cycle.end_date” (you can insert a new cycle between two existing cycles or before the last recent one)
-1. Any [Program](program) has at least one Cycle (Default Cycle)
+1. Any Program has at least one Cycle (Default Cycle)
 1. It is possible to add PP to a Cycle EVEN AFTER its “end_date” if the cycle is still active
 1. It is possible to create an “Open Cycle” (cycle with only a start date), but you cannot create new cycles.
-1. When you create a [TP](Target Population), you must set the cycle. This will automatically exclude HH in the same Cycle
+1. When you create a <glossary:TP>, you must set the cycle. This will automatically exclude HH in the same Cycle
 
 # Programme Population
 

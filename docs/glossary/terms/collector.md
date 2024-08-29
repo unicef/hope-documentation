@@ -1,7 +1,9 @@
 ---
 description:  "Person that receive money"
 template: term.html
-tags:
+title: Collectors
+terms:
+  - glossary:
     - Primary Collector
     - Alternate Collector
     - External Collector
@@ -20,8 +22,8 @@ Main collector of the aids
 # Alternate Collector
 
 Person who comes second in line to collect cash. May or may not be a member  
-of the household, for this reason can be used interchangeable with Representative.
+of the household.
 
 # External Collector
 
-Collector (Primary/Alternate) that is **not** an [Household's](household) member. 
+Collector (Primary/Alternate) that is **not** an <glossary:Household> member. 

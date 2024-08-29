@@ -3,19 +3,24 @@ description:  ""
 template: term.html
 tags:
   - TP
-
+terms:
+  - glossary:
+    - Target Population
+    - HouseHold Selection
+#
 ---
 
 # Target Population
 
-Households or Individuals who are eligible for assistance based programme&apos;s
-        targeting criteria.
+List of HHs candidate for a payment. TP can be promoted (locked) to become a [Payment Plan](#Payment Plan)
 
-# Targeting
-
-Sometimes used as a term pre-intervention to talk about who we are targeting.</p>
-        <p>In other cases targeting is the term to limit set of beneficiaries within
-          an intervention.
 
 # HouseHold Selection
-Single Entry of a Target Population. It become a [Payment Record](Payment Record)
+
+Single Entry of a Target Population. It becomes a [Payment Record](Payment Record)
+
+
+!!! note
+    
+    - Target Population and Payment Plan is the same object in different phases of its life cycle
+    - HouseHold Selection and Payment Record is the same object in different phases of its life cycle

@@ -11,5 +11,3 @@ In HOPE, Business Area represents the area dedicated to a country (with some exc
 # Business Unit
 
 Business Area can be split in multiple Business Unit when it represents multiple countries
-
-# Pro

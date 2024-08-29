@@ -2,7 +2,7 @@
 
 
 - Official Web Site: <https://github.com/unicef/hct-mis/>{:target="_extra"}
-- Documentation: <.>{:target="_extra"}
+- Documentation: <https://unicef.github.io/hope-documentation/>{:target="_extra"}
 - License: <https://github.com/unicef/hct-mis?tab=AGPL-3.0-1-ov-file>{:target="_extra"}
 
 
