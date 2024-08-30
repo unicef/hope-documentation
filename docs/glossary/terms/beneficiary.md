@@ -11,15 +11,15 @@ terms:
 
 ---
 
-# Beneficiary
+## Beneficiary
 
 A household or an individual (in the case of social workers) who is entitled to receive assistance 
 
 
-# Withdrawn 
+## Withdrawn 
 
 When a beneficiary is marked as withdrawn, it means they will no longer be eligible to receive further assistance 
 
-# Duplicate
+## Duplicate
 
 see <glossary:Deduplication>

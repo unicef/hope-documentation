@@ -7,17 +7,17 @@ terms:
   - glossary:
     - Target Population
     - HouseHold Selection
-#
+    - TP
 ---
 
-# Target Population
+## Target Population
 
-List of HHs candidate for a payment. TP can be promoted (locked) to become a [Payment Plan](#Payment Plan)
+List of HHs candidate for a payment. TP can be promoted (locked) to become a <glossary:Payment Plan>
 
 
-# HouseHold Selection
+## HouseHold Selection
 
-Single Entry of a Target Population. It becomes a [Payment Record](Payment Record)
+Single Entry of a Target Population. It becomes a <glossary:Payment Record>
 
 
 !!! note

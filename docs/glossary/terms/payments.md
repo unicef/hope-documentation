@@ -8,24 +8,30 @@ terms:
     - Fund Commitment
     - Fund reservation
     - Payment Instructions
-    - Payment Plan
-    - Payment Record
+    - "Payment Plan#Payment Plan"
+    - "Payment Record#Payment Record"
     - Payment Verification
     - Purchase Order
+    - Financial Service Provider
     - FSP
+    
+anchors:
+    - "Payment Record": single entry in a Payment Plan 
 
 ---
 
 
-# Cash Plan
+## Cash Plan
 
-# Fund Commitment
+## Fund Commitment
 
-# Fund reservation
+## Fund Reservation
 
-# Payment Instructions
+## Payment Instructions
 
-# Payment Plan
+## Payment Plan
+
+List of <glossary:Payment Record> 
 
 
 !!! note
@@ -33,12 +39,24 @@ terms:
     - Target Population and Payment Plan is the same object in different phases of its life cycle
     - HouseHold Selection and Payment Record is the same object in different phases of its life cycle
 
-# Payment Record
+## Payment Record
 
-# Payment Verification
+Single entry of a <glossary:Payment Plan> containing informations about Household and relative amounts
 
-# Purchase Order
+## Payment Verification
 
-# FSP
+## Purchase Order
 
-Financial Service Providers. These providers are the ones make the final payments to beneficiaries.
+## Financial Service Provider
+
+These providers are the ones make the final payments to beneficiaries.
+
+## Delivery Type
+
+Deposit to card, transfer or cash
+
+## Distribution Modality
+
+Grouping of assistance measurement (currency), delivery type, entitlement formula and FSP
+
+## Distribution Level

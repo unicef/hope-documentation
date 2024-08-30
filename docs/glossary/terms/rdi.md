@@ -1,12 +1,16 @@
 ---
 description: ""
 template: term.html
+terms:
+  - glossary: 
+    - Registration Data Import
+    - Enumerator
 ---
 
-# Registration Data Import
+## Registration Data Import
 
-File containing beneficiary data, or [Kobo](kobo) import dataset
+File containing beneficiary data, or [Kobo](/components/kobo.md) import dataset
 
-# Enumerator
+## Enumerator
 
 A person, usually a partner'a collaborator, who registers individuals.

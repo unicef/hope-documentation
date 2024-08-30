@@ -1,6 +1,7 @@
 ---
 description:  "unique address identity for a User"
 template: term.html
+title: Program
 tags:
   - program
   - cycle
@@ -8,14 +9,16 @@ terms:
   - glossary: 
     - Program
     - Cycle
+    - Programme Population
+    - intervention
 ---
 
-# Program
+## Program
 
 The campaign targeting a certain set of beneficiaries around a particular
-        reason or on the ground issues. Eg &quot;Cash for nutrition&quot; ( also [Intervention](Intervention))
+        reason or on the ground issues. Eg &quot;Cash for nutrition&quot; ( also `Intervention` )
 
-# Cycle
+## Cycle
 
 A cycle is a named time span (es. Jan, Feb… or First-Quarter, Second-Quarter…) to manage recurring payments 
 (paying SAME HH/IMD multiple times)
@@ -31,7 +34,7 @@ The Cycle must respect the followinf rules:
 1. It is possible to create an “Open Cycle” (cycle with only a start date), but you cannot create new cycles.
 1. When you create a <glossary:TP>, you must set the cycle. This will automatically exclude HH in the same Cycle
 
-# Programme Population
+## Programme Population
 
 Households or Individuals who fit the first set of targeting criteria and
         are potential targets of a given programme. They may or may not be further

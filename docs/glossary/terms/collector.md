@@ -13,17 +13,17 @@ terms:
 # Collectors
 
 Person that physically receive the aid. 
-HOPE manages different types of Collectors depending on the role and the relationship with the [Household](hoousehold)
+HOPE manages different types of Collectors depending on the role and the relationship with the <glossary:Household>
 
-# Primary Collector
+## Primary Collector
 
 Main collector of the aids
 
-# Alternate Collector
+## Alternate Collector
 
 Person who comes second in line to collect cash. May or may not be a member  
 of the household.
 
-# External Collector
+## External Collector
 
 Collector (Primary/Alternate) that is **not** an <glossary:Household> member. 

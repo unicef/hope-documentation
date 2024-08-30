@@ -1,2 +1,8 @@
 nav:
-  - ...
+  - index.md
+  - hde.md
+  - Payment Gateway: components/pg/
+  - aurora.md
+  - kobo.md
+  - reporting.md
+  - workspace.md

@@ -8,14 +8,18 @@ site_description: "Documentation"
 site_dir: ./~build/docs
 site_name: "HOPE"
 site_url: https://unicef.github.io/hope-documentation/
+strict: true
 extra_css:
   - _theme/css/style.css
 extra_javascript:
   - _theme/js/js.cookie.js
   - _theme/js/address.js
 exclude_docs: |
-  _includes/*
   _docs/*
+  _hooks/*
+  _includes/*
+  _scripts/*
+  ~*
 
 markdown_extensions:
   - abbr
@@ -112,8 +116,9 @@ plugins:
   - ezglossary:
       templates: docs/_theme/glossary
       inline_refs: none
-      list_definitions: false
-      list_references: false
+      list_definitions: true
+      list_references: true
+      tooltip: heading
   - ezlinks
   - link-marker
   - mkdocstrings
@@ -154,3 +159,9 @@ plugins:
 
 hooks:
   - docs/_hooks/hooks.py
+
+validation:
+  omitted_files: warn
+  absolute_links: warn  # Or 'relative_to_docs' - new in MkDocs 1.6
+  unrecognized_links: warn
+  anchors: warn  # New in MkDocs 1.6

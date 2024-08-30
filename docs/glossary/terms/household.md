@@ -18,7 +18,7 @@ An household can include one or an unlimited number of individuals.
 Each household is composed by at least (and only) one <glossary:Head> and its members.
 
 
-# Head Of Household (HoH)
+## Head Of Household (HoH)
 
 <glossary:Household> representative. All family members' relationships are defined starting from the head of the household.
 
@@ -32,6 +32,10 @@ Categories used to identify households. Attributes on a household and
         beneficiary typically taken in at registration time.
 
 
-# Household Representation
+## Household Representation
 
-HOPE has  
+-- 
+
+## Shell
+
+-- 
