@@ -1,7 +1,2 @@
 nav:
     - ...
-#
-#markdown_extensions:
-#- toc:
-#      permalink: #
-#      baselevel: 4

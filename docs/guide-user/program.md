@@ -35,12 +35,7 @@ Fill in the required fields for the new Programme.
 !!! note 
 
     The data collection type parameter defines the structure of beneficiary data used in the Programme. 
-
-1. Full Collection: Full individual data is collected. This type indicates that data has been collected for all of the household members. (Individuals with details collected = size of household).
-1. Partial Individuals: Partial individual data collected. This type indicates that data has been collected for the Head of Household, collector, and at least one other individual. However, data collection has not covered every member of the household. (Individuals with details collected are less than the size of household).
-1. Size only: Size only collected This type is assigned when only the size of the household (count of individuals) has been collected without collecting specific details about the household members.
-1. Size/age/gender disaggregated: No individual data available. This data collection type is assigned when no data has been collected for any individual other than the head of the household.
-1. Frontline Worker: This type is used for population where only individual information is collected to pay incentives for workers, and it can be named by the section implementing the programme. 
+    @see <glossary:Data Collection Type> for further details 
 
 
 #### Configure Partners
