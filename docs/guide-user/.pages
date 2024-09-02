@@ -1,4 +1,5 @@
 nav:
+  - index.md
   - Program Management: program.md
   - Beneficiary Management: people.md
   - Targeting: targeting.md
