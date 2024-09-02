@@ -107,12 +107,18 @@ theme:
 
 plugins:
   - alias
-#  - gen-files:
-#      scripts:
+  - gen-files:
+      scripts:
 #        - docs/_scripts/build_glossary.py
-#        - docs/_scripts/get_settings.py
+        - docs/_scripts/get_settings.py
   - autorefs
-  - awesome-pages
+  - awesome-pages:
+      filename: .pages
+      collapse_single_pages: true
+      strict: false
+      order: asc
+      sort_type: natural
+      order_by: title
   - ezglossary:
       templates: docs/_theme/glossary
       inline_refs: none
