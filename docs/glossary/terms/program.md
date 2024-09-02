@@ -34,6 +34,32 @@ The Cycle must respect the followinf rules:
 1. It is possible to create an “Open Cycle” (cycle with only a start date), but you cannot create new cycles.
 1. When you create a <glossary:TP>, you must set the cycle. This will automatically exclude HH in the same Cycle
 
+```mermaid
+    gantt
+    dateFormat YYYY-MM-DD
+    section Allowed Cycles
+        Cycle #1     :a1, 2014-01-01, 1M
+        Cycle #2     :    2014-02-01, 1M
+        Cycle #3     :    2014-03-01, 1M
+```
+
+```mermaid
+    gantt
+    dateFormat YYYY-MM-DD
+    section Forbidden
+        Cycle #1     :crit, 2014-01-01, 1M
+        Cycle #2     :crit, 2014-01-15, 1M
+```
+
+```mermaid
+    gantt
+    dateFormat YYYY-MM-DD
+    section Forbidden
+        Cycle #1     :crit, 2014-02-01, 1M
+        Cycle #2     :crit, 2014-01-15, 1M
+```
+
+
 ## Programme Population
 
 Households or Individuals who fit the first set of targeting criteria and
