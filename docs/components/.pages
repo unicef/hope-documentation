@@ -1,7 +1,8 @@
 nav:
   - index.md
+  - hope.md
   - hde.md
-  - Payment Gateway: components/pg/
+  - Payment Gateway: pg
   - aurora.md
   - kobo.md
   - reporting.md

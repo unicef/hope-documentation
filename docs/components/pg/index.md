@@ -1,7 +1,3 @@
----
-title: Payment Gateway
----
-
 # Payment Gateway
 
 

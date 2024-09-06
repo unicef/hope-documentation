@@ -8,7 +8,7 @@ site_description: "Documentation"
 site_dir: ./~build/docs
 site_name: "Documentation"
 site_url: https://unicef.github.io/hope-documentation/
-strict: true
+#strict: true
 extra_css:
   - _theme/css/style.css
 extra_javascript:
@@ -25,30 +25,30 @@ markdown_extensions:
   - abbr
   - admonition
   - attr_list
-  - def_list
-  - md_in_html
-  - mkdocs-click
+#  - def_list
+#  - md_in_html
+#  - mkdocs-click
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
-  - pymdownx.details
+#  - pymdownx.details
   - pymdownx.snippets:
       base_path: 'docs'
       check_paths: true
       url_download: true
-      auto_append:
-        - _includes/abbreviations.md
-  - pymdownx.highlight:
-      use_pygments: true
-  - pymdownx.tabbed:
-      alternate_style: true
-  - smarty
-  - tables
-  - toc:
-      permalink: #
-      baselevel: 1
+#      auto_append:
+#        - _includes/abbreviations.md
+#  - pymdownx.highlight:
+#      use_pygments: true
+#  - pymdownx.tabbed:
+#      alternate_style: true
+#  - smarty
+#  - tables
+#  - toc:
+#      permalink: #
+#      baselevel: 1
 
 
 extra:
@@ -94,24 +94,24 @@ theme:
   features:
     - content.action.edit
     - content.code.copy
-    - content.tooltips
-    - header.autohide
-    - navigation.footer
+#    - content.tooltips
+#    - header.autohide
+#    - navigation.footer
     - navigation.indexes
     - navigation.tabs
-    - navigation.sections
-    - toc.integrate
+#    - navigation.sections
+#    - toc.integrate
     - navigation.instant
-    - navigation.instant.prefetch
-    - navigation.instant.progress
+#    - navigation.instant.prefetch
+#    - navigation.instant.progress
 
 plugins:
-  - alias
-  - gen-files:
-      scripts:
-#        - docs/_scripts/build_glossary.py
-        - docs/_scripts/get_settings.py
-  - autorefs
+#  - alias
+#  - gen-files:
+#      scripts:
+##        - docs/_scripts/build_glossary.py
+#        - docs/_scripts/get_settings.py
+#  - autorefs
   - awesome-pages:
       filename: .pages
       collapse_single_pages: true
@@ -125,40 +125,38 @@ plugins:
       list_definitions: true
       list_references: true
       tooltip: heading
-  - ezlinks
+#  - ezlinks
   - link-marker
-  - mkdocstrings
-  - include-markdown:
-      encoding: ascii
-      preserve_includer_indent: false
-      dedent: false
-      trailing_newlines: true
-      comments: false
-      rewrite_relative_urls: true
-      heading_offset: 0
-#      start: <!--start-->
-#      end: <!--end-->
-      recursive: true
+#  - mkdocstrings
+#  - include-markdown:
+#      encoding: ascii
+#      preserve_includer_indent: false
+#      dedent: false
+#      trailing_newlines: true
+#      comments: false
+#      rewrite_relative_urls: true
+#      heading_offset: 0
+#      recursive: true
   - privacy
   - search
   - social:
       cards_dir: assets/images/social
       cards_layout_options:
         font_family: Noto Sans SC
-#  - autolinks
-  - blog:
-      blog_dir: howto
-      blog_toc: true
-      post_dir: "{blog}/posts"
-      post_date_format: ""
-      post_url_max_categories: 1
-#      post_excerpt: optional
-      post_readtime: false
-      archive: false
-      categories: false
-      authors: false
-      pagination: false
-      draft: false
+##  - autolinks
+#  - blog:
+#      blog_dir: howto
+#      blog_toc: true
+#      post_dir: "{blog}/posts"
+#      post_date_format: ""
+#      post_url_max_categories: 1
+##      post_excerpt: optional
+#      post_readtime: false
+#      archive: false
+#      categories: false
+#      authors: false
+#      pagination: false
+#      draft: false
   - tags:
       tags_file: tags.md
 

@@ -1,5 +1,5 @@
 ---
-title: Hope (core)
+title: Ecosystem
 ---
 
 # Ecosystem components
