@@ -1,3 +1,4 @@
 nav:
-  - Dependencies: dependencies.md
+  - index.md
+  - Technologies: dependencies.md
   - Docker: docker.md

@@ -15,7 +15,7 @@ Act of recording of unique households and individuals by data collection.
 The registration data can be shared by other organizations that have done
 this activity.
 
-It can happen on-line using [Aurora](/components/aurora.md) or offline using [Kobo](/components/kobo.md) or importing XLSX files.
+It can happen on-line using [Aurora](../../components/aurora.md) or offline using [Kobo](../../components/kobo.md) or importing XLSX files.
 
 
 ## Targeting

@@ -1,6 +1,12 @@
 # Country Report
 
-Reporting component of the HOPE ecosystem.
+Reporting component of the HOPE ecosystem. 
+This components allows user to produce reports and keep them updated customizing filters and refreshing schedule. 
+
+## Features
+
+
+## Repository
 
 <https://github.com/unicef/hope-country-report>
 
@@ -8,6 +14,7 @@ Reporting component of the HOPE ecosystem.
 ### Glossary
 
 <report:Parametrizer/Argument>
+
 : Dictionary used to create reports
 
 System flagged are special arguments with related sync

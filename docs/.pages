@@ -2,7 +2,6 @@ nav:
   - Home: index.md
 #  - Run: run.md
 #  - Configuration: configuration.md
-  - Components: components
   - User Manual: guide-user
   - Administrative Guide: guide-adm
   - Development Guide: guide-dev
@@ -10,3 +9,5 @@ nav:
 #  - License: license.md
   - Tags: tags
   - Links: links
+  - Ecosystem: components
+  - Architecture: arch.md

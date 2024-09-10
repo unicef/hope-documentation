@@ -3,10 +3,8 @@ nav:
   - setup.md
   - pr.md
   - lint.md
-#
-#arrange:
-#    - index.md
-#    - setup.md
+  - stack.md
+  - ...
 
 collapse: true
 

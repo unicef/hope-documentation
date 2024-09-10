@@ -1,9 +1,9 @@
 nav:
   - index.md
-  - hope.md
-  - hde.md
-  - Payment Gateway: pg
-  - aurora.md
-  - kobo.md
-  - reporting.md
-  - workspace.md
+#  - hope.md
+#  - hde.md
+#  - Payment Gateway: pg
+#  - aurora.md
+#  - kobo.md
+#  - reporting/index.md
+#  - workspace.md

@@ -8,7 +8,7 @@ site_description: "Documentation"
 site_dir: ./~build/docs
 site_name: "Documentation"
 site_url: https://unicef.github.io/hope-documentation/
-#strict: true
+strict: true
 extra_css:
   - _theme/css/style.css
 extra_javascript:
@@ -111,7 +111,7 @@ plugins:
 #      scripts:
 ##        - docs/_scripts/build_glossary.py
 #        - docs/_scripts/get_settings.py
-#  - autorefs
+  - autorefs
   - awesome-pages:
       filename: .pages
       collapse_single_pages: true

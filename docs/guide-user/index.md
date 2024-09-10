@@ -5,7 +5,7 @@ title: User Manual
 Hope is composed by different modules:
 
 
-- [Program Management](/guide-user/program.md)
+- [Program Management](program.md)
 - [Beneficiary Management](people.md)
 - [Targeting](targeting.md)
 - [Payment Module](pm.md)
