@@ -18,8 +18,9 @@ import such data:Registration
 #### Beneficiary Registration with KOBO
 
 KoBo is a digital data collection tool that allows creation of customization of registration forms and easy collation of data for reporting and programmatic use. It consists of two components:
+
 1. KoBo Toolbox which is a web application
-2. KoBo Collect which is mobile application (for Android)
+1. KoBo Collect which is mobile application (for Android)
 
 
 !!! note "Why use KOBO?"
