@@ -1,13 +1,5 @@
 # HOPE Business Process
 
-=== "aaa"
-    1111
-
-=== "222"
-
-    www
-
-
 ``` mermaid
     flowchart TB
     R -- merge --> P[Program Population]

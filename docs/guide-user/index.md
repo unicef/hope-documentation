@@ -13,6 +13,6 @@ Hope is composed by different modules:
 - [Payment Verification](payment_verification.md)
 - [Grievance](grievance.md)
 - [User Management](user.md)
+- [Activity Log](log.md)
 
-
-The Basic process flow supported by HOPE is drafted [here](process.md)
+[//]: # (The Basic process flow supported by HOPE is drafted [here]&#40;process.md&#41;)
