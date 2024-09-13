@@ -5,14 +5,17 @@
 
     ...
 
-### Analyze HTML Report
+#### Analyze HTML Report
+    
+    ...
 
 ## Run "Selenium" functional test
 
     ...
 
-### Analyze HTML Report
+#### Analyze HTML Report
 
+    ...
 
 ## Combine coverage and display reports
 

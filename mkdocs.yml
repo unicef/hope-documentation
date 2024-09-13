@@ -106,7 +106,6 @@ theme:
 #    - navigation.instant.progress
 
 plugins:
-  - git-revision-date-localized:
 #  - alias
 #  - gen-files:
 #      scripts:
