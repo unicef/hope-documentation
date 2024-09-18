@@ -1,8 +1,9 @@
 ---
 title: Beneficiary Management
 tags:
-      - Beneficiary
+      - Planner
       - Programme
+      - Registration
 ---
 
 This section covers the tools for uploading beneficiary data and the Registration Data Import module in HOPE. There are two methods supported by HOPE for registering beneficiary data and two methods to

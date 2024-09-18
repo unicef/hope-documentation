@@ -1,5 +1,9 @@
 ---
 title: Payment Module
+tags:
+    - Payment Planner
+    - Target Population
+    - Entitlements
 ---
 
 # Payment Module

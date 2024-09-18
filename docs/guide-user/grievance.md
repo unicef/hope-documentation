@@ -1,5 +1,9 @@
 ---
 title: Grievance Module
+tags:
+    - Grievance Collector
+    - Dashboard
+    - Feedback
 ---
 
 The Grievances Module generates reports based on feedback from beneficiaries and other stakeholders to improve the

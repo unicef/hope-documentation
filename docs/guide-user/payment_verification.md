@@ -1,5 +1,9 @@
 ---
 title: Payment Verification
+tags:
+    - Payment Verifier
+    - Payment Plan
+    - Reconciliation
 ---
 The Payment Verification module allows UNICEF to check that beneficiaries have received the correct amounts in the correct timeframe by providing tools for sampling and matching data from financial reconciliation for beneficiaries for each payment cycle and verifying received amounts directly with beneficiary households.
 
