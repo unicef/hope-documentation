@@ -1,3 +1,9 @@
+**title**: Programme Users 
+**tags**:
+    - Partner
+    - Programme
+    - Role
+
 # User Management
 
 The Program Users module shows the HOPE users in the Programme and which roles are assigned to them.

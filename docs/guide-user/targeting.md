@@ -1,5 +1,9 @@
 ---
 title: Targeting
+tags:
+    - Planner
+    - Programme Cycle
+    - Payment
 ---
 The Targeting module allows querying households based on programme criteria and defining entitled households to be included as recipients for a transfer. In this regard, HOPE can perform complex computation analysis resulting in composite vulnerability scores.  
 

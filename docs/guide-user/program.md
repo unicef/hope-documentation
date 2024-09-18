@@ -1,5 +1,9 @@
 ---
 title: Program Module
+tags:
+    - Planner
+    - Partner
+    - Data collecting Type
 ---
 
 # Program 
