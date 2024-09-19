@@ -29,6 +29,8 @@ anchors:
 
 ## Payment Instructions
 
+The delivery channels that will be used for payment plan dispersion
+
 ## Payment Plan
 
 List of <glossary:Payment Record> 
@@ -60,3 +62,7 @@ Deposit to card, transfer or cash
 Grouping of assistance measurement (currency), delivery type, entitlement formula and FSP
 
 ## Distribution Level
+
+## Payment Gateway
+
+The component that is used to manage API-integrated FSPs and their corresponding payment records.
