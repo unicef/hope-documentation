@@ -5,6 +5,7 @@ on:
     branches:
       - develop
       - main
+      - *
   pull_request:
     branches:
       - develop
@@ -44,6 +45,7 @@ jobs:
 
   # Deployment job
   deploy:
+    if: contains(github.ref, 'main')
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
