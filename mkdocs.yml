@@ -26,7 +26,7 @@ markdown_extensions:
   - admonition
   - attr_list
 #  - def_list
-#  - md_in_html
+  - md_in_html
 #  - mkdocs-click
   - pymdownx.superfences:
       custom_fences:
@@ -102,8 +102,8 @@ theme:
 #    - navigation.sections
 #    - toc.integrate
     - navigation.instant
-#    - navigation.instant.prefetch
-#    - navigation.instant.progress
+    - navigation.instant.prefetch
+    - navigation.instant.progress
 
 plugins:
 #  - alias
@@ -126,17 +126,19 @@ plugins:
       list_references: true
       tooltip: heading
 #  - ezlinks
+  - gitsnippet
   - link-marker
-#  - mkdocstrings
-#  - include-markdown:
-#      encoding: ascii
-#      preserve_includer_indent: false
-#      dedent: false
-#      trailing_newlines: true
-#      comments: false
-#      rewrite_relative_urls: true
-#      heading_offset: 0
-#      recursive: true
+  - macros
+  #  - mkdocstrings
+  - include-markdown:
+      encoding: ascii
+      preserve_includer_indent: false
+      dedent: false
+      trailing_newlines: true
+      comments: false
+      rewrite_relative_urls: true
+      heading_offset: 0
+      recursive: true
   - privacy
   - search
   - social:

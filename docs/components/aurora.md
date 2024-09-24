@@ -5,3 +5,5 @@ Aurora is an open source project to collect and register data. It is focused mai
 
 
 <https://github.com/unicef/aurora>
+
+## Install

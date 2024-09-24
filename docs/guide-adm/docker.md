@@ -7,5 +7,5 @@ tags:
 # Run
 
 ```yaml
---8<-- "https://raw.githubusercontent.com/unicef/hct-mis/develop/compose.yml"
+--8<-- "https://raw.githubusercontent.com/unicef/hope/refs/heads/develop/development_tools/compose.yml"
 ```
