@@ -19,5 +19,6 @@ We require at least Docker 19.03.6 and Compose 2.19.0.
 
 ## Helm Chart
 
-HOPE teaml also maintain Kubernetes Heln charts that are available in a 
-[dedicate Repository](https://github.com/unicef/hope-core-chart). 
+The system can be deployed on a k8s cluster. It has been tested on AKS.
+
+Please refer to the README in [https://github.com/unicef/hope-helm-charts](https://github.com/unicef/hope-helm-charts) for more information about deploying HOPE on Kubernetes with Helm.
