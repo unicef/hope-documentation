@@ -4,33 +4,62 @@ title: Setup
 
 ## Prerequisites
 
-This project uses PDM as package manager (see https://github.com/pdm-project/pdm),
-and relies on the following components:
+- git
+- docker
+- nodejs v20 (you can use nvm to manage node versions)
+- yarn
 
-- A Postgres DB v15+
-- A Redis server
-- An ElasticSearch server
 
 
 ## Get started
-
-1. Install [pdm](https://github.com/pdm-project/pdm#installation) amd create virtualenv
-1. Crate virtual env
-   1. `pdm venv create`
-1. Register the created venv for the project with 
-   1. `pdm use` 
-1. Activate your venv 
-   1. `pdm venv activate`
-1. Check your environment
-   1. eg. $`python --version` -> see that it uses Python 3.12.*
-   1. eg. $`which python` -> see that it matches you python executable in the venv you have created: $```echo `pwd`/.venv/bin/python```
-1. Install the package
-   1. `pdm install`
-1. Setup PYTHONPATH
-   1. `export PYTHONPATH="$PYTHONPATH:./src"`
-1. Check and configure your environment: 
-   1. `./manage.py env --check` and configure the missing variables.
-      You can generate a list for your development environment with the command `./manage.py env --develop --config --pattern='export {key}={value}'`
-1. Once the environment has been set up run the initial migrations
-   1. `./manage.py upgrade`
-1. Test using runserver $`./manage.py runserver` and logging in the admin `http://locslhost:8000/admin`
+### Backend 
+1. Clone the repository
+    
+    ```bash
+    git clone git@github.com:unicef/hope.git
+    ```
+2. go to directory development_tools
+    ```bash
+    cd hope/development_tools
+    ```
+3. Create a `.env` file based on the `.env.example` file
+    ```bash
+    cp .env.example .env
+    ```
+4. Build the docker image
+    ```bash
+    docker compose --profile default build
+    ```
+5. Run initialisation script
+    ```bash
+    docker compose run --rm backend ./manage.py initdemo
+    ```
+6. Create a superuser
+    ```bash
+    docker compose run --rm backend ./manage.py createsuperuser
+    ```
+6. Run the backend
+    ```bash
+    docker compose --profile default up
+    ```
+### Frontend
+In a new terminal window
+1. Go to the frontend directory
+    ```bash
+    cd hope/src/frontend
+    ```
+2. Install dependencies
+    ```bash
+    yarn
+    ```
+3. Run the frontend
+    ```bash
+    yarn dev
+    ```
+   
+## Access the application
+- Admin panel is running on `http://localhost:3000/api/unicorn/`
+- Login with the superuser credentials created in step 6 of the backend setup
+- Select your superuser from list at  `http://localhost:3000/api/unicorn/account/user/`
+- Add new User Role at the bottom of the page. Select `Afghanistan` (it has some test data) as the Business Area, and `Role with all Permissions (HOPE)` and save
+- Access the frontend on `http://localhost:3000/`
