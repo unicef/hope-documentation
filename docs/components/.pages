@@ -1,9 +1,9 @@
 nav:
   - index.md
-#  - hope.md
-  - hde.md
-  - Payment Gateway: pg
+
   - Aurora: aurora
-#  - kobo.md
-#  - reporting/index.md
+  - kobo.md
+  - hde.md
+  - Country Report: reporting
+  - Payment Gateway: pg
 #  - workspace.md
