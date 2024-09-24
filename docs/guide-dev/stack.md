@@ -16,5 +16,5 @@ Here a brief list of the relevant technologies
 ## pyproject.toml
 
 ``` ini
---8<-- "https://raw.githubusercontent.com/unicef/hope/develop/backend/pyproject.toml"
+--8<-- "https://raw.githubusercontent.com/unicef/hope/refs/heads/develop/src/pyproject.toml"
 ```
