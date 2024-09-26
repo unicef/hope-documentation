@@ -1,9 +1,9 @@
 ---
 description:  "unique address identity for a User"
 template: term.html
-title: Program
+title: Programme
 tags:
-  - program
+  - programme
   - cycle
 terms:
   - glossary: 

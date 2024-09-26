@@ -28,13 +28,13 @@ What Do I Need to Do Before Creating a Programme in Hope?
 
 Select the ‘Programme Management’ tab in the legend, then select ‘Create Programme’
 
-![Image](_screenshots/program/1.png)
+![Image](_screenshots/programme/1.png)
 
 #### Provides infos
 
 Fill in the required fields for the new Programme.
 
-![Image](_screenshots/program/2.png)
+![Image](_screenshots/programme/2.png)
 
 
 !!! note 
@@ -47,7 +47,7 @@ Fill in the required fields for the new Programme.
 
 Upon clicking “Next”, the programme partners page will appear where you can select a programme partner from a drop-down list and grant access to the entire business area or limit access by administrative areas. Users are also able to assign more than one partner to a programme.
 
-![Image](_screenshots/program/3.png)
+![Image](_screenshots/programme/3.png)
 
 #### Complete setup
 
@@ -59,7 +59,7 @@ Three actions can occur in the Programme Details page:
 1. To change programme settings, click on the Edit button.
 1. To remove the programme, click on the remove button. (Note that you can only remove a programme in draft status)
 
-![Image](_screenshots/program/4.png)
+![Image](_screenshots/programme/4.png)
 
 #### Activate the Program
 
@@ -68,4 +68,4 @@ After the programme is activated, the following actions can be performed on the 
 1. Edit Programme: to update programme’s details.
 1. Finish Programme: to deactivate the programme after it has been completed.
 
-![Image](_screenshots/program/5.png)
+![Image](_screenshots/programme/5.png)

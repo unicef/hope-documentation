@@ -46,5 +46,5 @@ Once HOPE confirms that Payment Plan is ready, PG starts sending data to Western
 
 Transactions support:
 
-- Money in Minutes (aka Cash by FSP)
+- Money in Minutes (aka Cash over the counter)
 - Wallets (aka Mobile Money)
