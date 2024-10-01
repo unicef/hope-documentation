@@ -23,7 +23,7 @@ TERMS = {}
 
 index = "guide-adm/hope/settings.md"
 
-FILE = "https://raw.githubusercontent.com/unicef/hct-mis/develop/backend/hct_mis_api/config/env.py"
+FILE = "https://raw.githubusercontent.com/unicef/hope/develop/backend/hct_mis_api/config/env.py"
 res = requests.get(FILE)
 buf = StringIO(res.text)
 execCode = compile(res.text, 'mulstring', 'exec')

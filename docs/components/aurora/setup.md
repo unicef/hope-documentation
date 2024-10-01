@@ -1,4 +1,4 @@
-# Development Setup
+# Contributing
 
 
 Prerequisites:
