@@ -1,5 +1,8 @@
 
-# Pull Requests
+# Contributing
+
+
+## Pull Requests
 
 Every pull request should contain tests to coverage the functionality, 
 only PR following below rules will be considered for merging:

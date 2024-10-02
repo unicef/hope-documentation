@@ -1,7 +1,7 @@
 nav:
   - index.md
   - setup.md
-  - pr.md
+  - contributing.md
   - lint.md
   - stack.md
   - ...

@@ -9,6 +9,11 @@ tags:
 Reporting component of the HOPE ecosystem. 
 This components allows user to produce reports and keep them updated customizing filters and refreshing schedule. 
 
+## Repository
+
+<https://github.com/unicef/hope-country-report>
+
+
 ## Features
 
 - Custom Queries
@@ -19,8 +24,4 @@ This components allows user to produce reports and keep them updated customizing
   - xls
   - txt
   - csv
-  
 
-## Repository
-
-<https://github.com/unicef/hope-country-report>
