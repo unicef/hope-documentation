@@ -37,3 +37,10 @@ Western Union calls PG endpoint in order to notify that money has been received 
 - REFUND
 - CANCEL
 - REJECT
+
+Once HOPE confirms that Payment Plan is ready, PG starts sending data to Western Union though SOAP Requests.
+
+Transactions support:
+
+- Money in Minutes (aka Cash over the counter)
+- Wallets (aka Mobile Money)

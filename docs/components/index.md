@@ -12,17 +12,19 @@ systems and platforms, ensuring smooth workflows and easy expansion as your need
 
 - [Aurora](aurora/index.md) 
 
-- [Kobo](kobo.md) 
+- [Kobo](kobo/index.md) 
 
-- [DeduplicationEngine](hde.md)
+- [DeduplicationEngine](hde/index.md)
 
 - [Country Report](reporting/index.md)
 
 - [Payment Gateway](pg/index.md)
 
-- Country Workspace _(not yet released)_
+- [Country Workspace](workspace/index.md)
 
 - User Management Module  _(not yet released)_
+
+- [RapidPro](rapidpro/index.md)
 
 
 ## Hope supporting libraries
@@ -33,3 +35,5 @@ These are some of the libraries developed to support HOPE that are released unde
 
 - Flex Fields <https://github.com/unicef/hope-flex-fields>
 - Django SmartEnv <https://github.com/unicef/django-smart-env>
+- Smart Import <https://github.com/unicef/hope-smart-import>
+- Smart Export <https://github.com/unicef/hope-smart-export>
