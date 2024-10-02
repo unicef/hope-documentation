@@ -9,7 +9,7 @@ terms:
 
 ## Registration Data Import
 
-File containing beneficiary data, or [Kobo](../../components/kobo.md) import dataset
+File containing beneficiary data, or [Kobo](../../components/kobo/index.md) import dataset
 
 ## Enumerator
 
