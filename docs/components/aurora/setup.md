@@ -108,3 +108,12 @@ After you have cloned the repo, be sure to have a Reddis and PostgreSQL server r
     docker compose up
 
 navigate to http://localhost:8000/admin/ and login using `admin@example.com/password`
+
+
+### Setup HOPE integration
+
+- Add aurora_token in the user
+- Add aurora_server in the Constance Config
+- Fetch data from Aurora
+- Associate Organizations to Business Areas
+- Associate Projects to Programmes 
