@@ -161,7 +161,8 @@ plugins:
 #      draft: false
   - tags:
       tags_file: tags.md
-
+  - panzoom:
+      full_screen: true
 
 hooks:
   - docs/_hooks/hooks.py
