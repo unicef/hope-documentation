@@ -9,7 +9,7 @@ ensuring that the user interface and web interactions function as expected.
 Unit tests are executed within a Docker container using the pytest framework.
 This ensures a consistent testing environment, isolated from local machine configurations.
 
-    docker compose run --rm backend pytest -n auto --reruns 3  -rP -p no:warnings --cov-report= --capture=sys  /tests/unit
+    docker compose run --rm backend pytest -n auto --reruns 3  -rP -p no:warnings --cov-report= --capture=sys  ./tests/unit
 
 
 ## Run "Selenium" functional test
@@ -54,6 +54,6 @@ This will require some more steps to be taken before running the tests.
    1. `pdm sync --no-editable --no-self --no-isolation`
 1. Run the tests
    1. `source ./development_tools/local_selenium_init.sh`
-   1. `python -m pytest -svvv tests/selenium --html-report=./report/report.html`
+   1. `python -m pytest -svvv ./tests/selenium --html-report=./report/report.html`
 
 
