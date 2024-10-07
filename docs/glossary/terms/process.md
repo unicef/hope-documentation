@@ -26,4 +26,6 @@ Sometimes used as a term pre-intervention to talk about who we are targeting.</p
 
 ## Deduplication
 
+--8<-- "components/hde/deduplication_description.md"
+
 #

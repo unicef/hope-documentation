@@ -3,6 +3,7 @@
 To develop the service locally, you can utilize the provided `compose.yml` file. This configuration file defines all the necessary services, including the primary application and its dependencies, to create a consistent development environment. By using **Docker Compose**, you can effortlessly spin up the entire application stack, ensuring that all components work seamlessly together.
 
 To build and start the service, along with its dependencies, run the following command:
+
     docker compose up --build
 
 

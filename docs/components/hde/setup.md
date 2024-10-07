@@ -1,3 +1,8 @@
+---
+tags:
+  - Deduplication
+---
+
 ## Prerequisites
 
 This project utilizes [PDM](https://pdm-project.org/) as the package manager for managing Python dependencies and environments. 
@@ -78,7 +83,7 @@ This backend is used for storing locally downloaded DNN model files and encoded 
 #####  FILE_STORAGE_DNN
 This backend is dedicated to storing DNN model files. Ensure that the following two files are present in this storage:
 
-1. *deploy.prototxt*: Defines the model architecture.
+1. *deploy.prototxt.txt*: Defines the model architecture.
 2. *res10_300x300_ssd_iter_140000.caffemodel*: Contains the pre-trained model weights.
 
 The current process involves downloading files from a [GitHub repository](https://github.com/sr6033/face-detection-with-OpenCV-and-DNN) and saving them to this specific Azure Blob Storage using command `django-admin upgrade --with-dnn-setup`, or the specialized`django-admin dnnsetup` command .
