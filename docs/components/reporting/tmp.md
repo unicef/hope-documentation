@@ -1,3 +1,5 @@
+# HCR Components
+
 python manage.py inspect_hope 
 
 Login in develop: 
@@ -5,9 +7,7 @@ Anypassword login
 user -> 
 admin -> 
 
-# Sections 
-
-## Home 
+# Home 
 
 [future] Overview of country dashboard 
 
