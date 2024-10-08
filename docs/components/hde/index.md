@@ -1,7 +1,8 @@
 # Deduplication
 
-Deduplication Engine component of the HOPE ecosystem. It provides users with powerful capabilities to identify and remove duplicate records within the system, ensuring that data remains clean, consistent, and reliable.
+Deduplication Engine component of the HOPE ecosystem.
 
+--8<-- "components/hde/deduplication_description.md"
 
 ## Repository
 

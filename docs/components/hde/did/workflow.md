@@ -1,3 +1,8 @@
+---
+tags:
+  - Deduplication
+---
+
 The Image Processing and Duplicate Detection workflow is designed to provide reliable face detection, recognition, and duplicate detection by leveraging a pre-trained deep learning model.
 
 ## Inference Mode Operation

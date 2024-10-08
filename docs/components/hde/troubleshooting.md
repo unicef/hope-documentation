@@ -2,4 +2,5 @@ If you encounter issues while running the service, the **admin panel** can be a 
 
 To efficiently track and monitor errors within the application, **Sentry** is integrated as the primary tool for error logging and alerting.
 
-For Sentry to work correctly, ensure that the **SENTRY_DSN** environment variable is set.
+!!! warning "Sentry environment"
+    For Sentry to work correctly, ensure that the **SENTRY_DSN** environment variable is set.
