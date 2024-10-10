@@ -7,7 +7,7 @@ Each FSP can have a different way to interact with the payment gateway with thou
 
 ## Repository
 
-Repo: <https://github.com/unicef/hope-payment-gateway>
+> Repo: <https://github.com/unicef/hope-payment-gateway>
 
 
 ## HOPE / PG Integration API

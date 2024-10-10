@@ -1,4 +1,5 @@
 nav:
   - index.md
+  - setup
   - glossary.md
   - tmp.md

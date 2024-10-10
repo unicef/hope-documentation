@@ -18,4 +18,4 @@ The strengths of Aurora are:
 
 ## Repository
 
-<https://github.com/unicef/hope-aurora>
+> Repo: <https://github.com/unicef/hope-aurora>
