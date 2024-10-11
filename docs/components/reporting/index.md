@@ -11,7 +11,7 @@ This components allows user to produce reports and keep them updated customizing
 
 ## Repository
 
-<https://github.com/unicef/hope-country-report>
+> Repo: <https://github.com/unicef/hope-country-report>
 
 
 ## Features

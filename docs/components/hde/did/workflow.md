@@ -1,47 +1,86 @@
-The Image Processing and Duplicate Detection workflow is designed to provide reliable face detection, recognition, and duplicate detection by leveraging a pre-trained deep learning model.
+---
+tags:
+  - Deduplication
+---
+
+# Image Processing and Duplicate Detection
+
+The workflow uses pre-trained models from [OpenCV](https://opencv.org/) for face detection and [dlib](http://dlib.net/) for face recognition and landmark detection. This setup provides a fast, reliable solution for real-time applications, without requiring the training of models from scratch. OpenCV handles face detection using a Caffe-based model, while **dlib**, accessed through the [face_recognition](https://pypi.org/project/face-recognition/) library, manages recognition and duplicate identification.
+
+Future updates will involve custom-trained models to further improve performance.
 
 ## Inference Mode Operation
 
-This application operates strictly in inference mode, which means that it does not perform training but instead relies on a pre-trained model for face recognition tasks. This mode ensures that the application can rapidly deploy face recognition capabilities without the computational cost or time required for training models from scratch.
+This application operates entirely in inference mode, relying on pre-trained models for both face detection and recognition tasks. **OpenCV** handles face detection, and **face_recognition**, a Python wrapper for **dlib**, performs face recognition and duplicate identification. This approach ensures efficient, real-time processing without the need for additional training, allowing the application to quickly deploy its capabilities.
 
-### Pre-Trained Model Usage.
+- **OpenCV**: Optimized for fast face detection, ideal for real-time image and video applications.
+- **dlib's face_recognition**: Focuses on generating face embeddings for comparison, providing high accuracy in identification.
 
-The pre-trained model is stored in Azure Blob Storage and is automatically downloaded by the application when it starts. This process ensures that the latest version of the model is always available for inference.
-### Manual Model Update.
+By combining OpenCV for detection and dlib for recognition, the system offers a balance of speed and precision.
 
-In addition to automatic loading, administrators have the option to manually update the model through the admin panel. This feature provides flexibility for applying updates or new models when improvements or changes are required without modifying the underlying code.
+### Pre-Trained Models Storage
 
-## Model Details
+- **OpenCV** uses a pre-trained [Caffe model](https://caffe.berkeleyvision.org/) stored in Azure Blob Storage, automatically downloaded at application startup.
+- **face_recognition** utilizes a pre-trained [dlib model](https://pypi.org/project/face_recognition_models/) stored locally within the container’s library directory.
 
-The face recognition capabilities are powered by the [OpenCV](https://github.com/opencv/opencv) library. Currently, the application utilizes an open-source, pre-trained model specifically designed for face detection.
+Administrators can manually update the **Caffe model** via the admin panel, allowing flexible updates or new model versions without altering the application code.
 
-### Model Components
+---
 
-- **deploy.prototxt**: This file defines the model architecture, including the network layers and the specific parameters used for each layer. It serves as a blueprint that guides how the model processes input data.
-- **res10_300x300_ssd_iter_140000.caffemodel**: This file contains the trained weights of the model. It was trained using the **Caffe** deep learning framework, with a total of 140,000 iterations, ensuring robustness in face detection tasks.
+## Face Detection and Recognition Models
 
-### Model Architecture
+### OpenCV Model Details
 
-- The model follows the **Res10** architecture, which is known for its efficiency in detecting faces. Res10 is a lightweight model that balances speed and accuracy, making it suitable for real-time applications.
-- The model operates with a fixed input resolution of **300x300**, optimizing detection for faces within that scale. This resolution offers a compromise between detail and processing efficiency, allowing the model to quickly identify facial features without excessive computational load.
-- SSD Methodology. The model utilizes the **Single Shot MultiBox Detector (SSD)** methodology, which is a popular approach for object detection. SSD is designed to predict both the bounding boxes and the confidence scores for each object in a single forward pass through the network. By leveraging the SSD approach, the model can efficiently detect multiple faces in a single image, making it suitable for batch processing and applications where rapid detection is required.
+OpenCV powers the face detection component using a pre-trained model designed for real-time performance.
 
+#### Model Components
 
-## Worklow Diagram
+- **deploy.prototxt**: Defines the network architecture and parameters for model execution.
+- **res10_300x300_ssd_iter_140000.caffemodel**: Contains trained weights, generated after 140,000 iterations using the **Caffe** framework.
 
-The workflow diagram illustrates the overall process of Image Processing and Duplicate Detection within the system, showcasing how different components interact to achieve **face detection**, **recognition**, and **duplicate identification**. 
+#### Model Architecture
+
+- **Res10 Architecture**: A lightweight model that balances speed and accuracy, perfect for real-time detection.
+- **300x300 Input Resolution**: Optimized for face detection at this resolution, ensuring a balance between detail and efficiency.
+- **SSD (Single Shot MultiBox Detector)**: A method that predicts bounding boxes and confidence scores in a single pass, allowing rapid detection of multiple faces in a single image.
+
+### Dlib Model Details
+
+The **dlib** models used for recognition and facial landmark detection include:
+
+1. **dlib_face_recognition_resnet_model_v1.dat**
+
+    A modified **ResNet-34** model generating **128-dimensional face embeddings** for face recognition, achieving **99.38% accuracy** on the LFW benchmark.
+
+2. **mmod_human_face_detector.dat**
+    A **CNN-based Max-Margin Object Detector (MMOD)** for accurate face detection, especially under difficult conditions like varied orientations or lighting.
+
+3. **shape_predictor_5_face_landmarks.dat**
+    Detects **5 key facial landmarks** (eye corners and nose base), optimized for fast face alignment.
+
+4. **shape_predictor_68_face_landmarks.dat**
+    Detects **68 facial landmarks** (eyes, nose, mouth, jawline), used for more detailed facial alignment and analysis.
+
+---
+
+## Workflow Diagram
+
+The workflow diagram illustrates the overall process of image processing and duplicate detection. **OpenCV** is used for face detection, while **face_recognition** (built on **dlib**) handles face recognition and duplicate identification.
 
 ```mermaid
 flowchart LR
-  subgraph DNNManager[DNN Manager]
-      direction TB
-      load_model[Load Model] -- computation <a href="../config/#dnn_backend">backend</a>\ntarget <a href="../config/#dnn_target">device</a>  --> set_preferences[Set Preferences]
-  end
-
   subgraph ImageProcessing[Image Processing]
       direction LR
       
       subgraph FaceDetection[Face Detection]
+
+        subgraph DNNManager[DNN Manager]
+            direction TB
+            load_model[Load Caffe Model] -- computation <a href="../config/#dnn_backend">backend</a>\ntarget <a href="../config/#dnn_target">device</a>  --> set_preferences[Set Preferences]
+        end
+          
+          DNNManager --> run_model
+
           direction TB
           load_image[Load Image] -- decoded image as 3D numpy array\n(height, width, channels of BlueGreeRed color space) --> prepare_image[Prepare Image] -- blob 4D tensor\n(normalized size, use <a href="../config/#blob_from_image_scale_factor">scale factor</a> and <a href="../config/#blob_from_image_mean_values">means</a>) --> run_model[Run Model] -- shape (1, 1, N, 7),\n1 image\nN is the number of detected faces\neach face is described by the 7 detection values--> filter_results[Filter Results] -- <a href="../config/#face_detection_confidence">confidence</a> is above the minimum threshold,\n<a href="../config/#nms_threshold">NMS</a> to suppress overlapping bounding boxes --> return_detections[Return Detections]
       end
@@ -57,7 +96,7 @@ flowchart LR
       load_encodings[Load Encodings] --> compare_encodings[Compare Encodings] -- face distance less then <a href="../config/#face_distance_threshold">threshold</a> --> return_duplicates[Return Duplicates]
   end
 
-  DNNManager --> ImageProcessing --> DuplicateFinder
+  ImageProcessing --> DuplicateFinder
   FaceDetection --> FaceRecognition
 
 ```
