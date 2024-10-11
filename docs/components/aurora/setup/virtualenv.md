@@ -15,7 +15,7 @@ Prerequisites:
 
 ## Create virtualenvironment
 
-2. Checkout code
+1. Checkout code
 
     ```
     git clone https://github.com/unicef/hope-aurora
@@ -23,7 +23,7 @@ Prerequisites:
 
     ```
    
-1. In the shell:
+2. In the shell:
     
     ```
     pdm venv create
@@ -31,12 +31,12 @@ Prerequisites:
     pdm venv activate
     ```
    
-1. Check your virtualenv is properly created
+3. Check your virtualenv is properly created
 
     ```pdm info```
 
 
-1. Install the package
+4. Install the package
 
     ```
      pdm install
@@ -44,10 +44,10 @@ Prerequisites:
     ```
 
 
-1. Add `export PYTHONPATH="$PYTHONPATH:./src"`
+5. Add `export PYTHONPATH="$PYTHONPATH:./src"`
 
 
-1. Check your environment: 
+6. Check your environment: 
 
     `./manage.py env --check` and configure the missing variables.
 
@@ -57,7 +57,7 @@ Prerequisites:
     
             ./manage.py env --develop --config --pattern='export {key}={value}'   
 
-1. Run upgrade command to properly initialize the application: 
+7. Run upgrade command to properly initialize the application: 
 
     `./manage.py upgrade --admin-email ${ADMIN_EMAIL} --admin-password ${ADMIN_PASSWORD}`
     
@@ -83,37 +83,3 @@ echo "unset PS1" >> .envrc
     The first time after you have created or modified the _.envrc_ file you will have to authorize it using:
 
         direnv allow
-
-# Run
-
-To start working with Aurora you can:
-
-
-### Build and use your docker
-
-After you have cloned the repo, be sure to have a Reddis and PostgreSQL server running on your machine
-
-    export ADMIN_EMAIL=admin@example.com
-    export ADMIN_PASSWORD=password
-    export DATABASE_URL=postgres://postgres:@127.0.0.1:5432/aurora
-    export CACHE_URL=redis://127.0.0.1:6379/1?client_class=django_redis.client.DefaultClient
-
-    cd docker
-
-    make build run
-
-
-### Use provided compose.yml
-
-    docker compose up
-
-navigate to http://localhost:8000/admin/ and login using `admin@example.com/password`
-
-
-### Setup HOPE integration
-
-- Add aurora_token in the user
-- Add aurora_server in the Constance Config
-- Fetch data from Aurora
-- Associate Organizations to Business Areas
-- Associate Projects to Programmes 
