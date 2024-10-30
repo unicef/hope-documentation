@@ -18,15 +18,18 @@ contexts.
 
 Summary: The HOPE system allows organization disbursing cash transfers to perform the following function with programme quality assurance, data protection standards and a risk informed cash transfer delivery for Humanitarian Cash Transfers as well as incentive payments for frontline workers. HOPE offers the following high level functionalities:
 
-1. Collect beneficiary data.
-2. Associate data with cash transfers programmes
-3. Create target populations.
-4. Manage payment lists.
-5. Send payment lists to Financial Service Providers (FSPs).
-6. Reconcile payments.
-7. Triangulate payment verification information directly from beneficiaries.
-8. Handle grievances and feedback.
-9. Provide reporting on key programme metrics.
+|#| HOPE Functions  | Added Value |		
+|---|--------------------------|----------------------------------------------|
+|1|Registration of payees data	| Quality Assurance for data collection, verification of eligibility |
+|2|Deduplication of personal records|Mitigate the risk of duplicate records|
+|3|Target payments|Ensure inclusion of relevant payees in payment plan|
+|4|Entitlment Calculations|Ensure cash benefit entitlement rules are uphold|
+|5|Payment Management|Approval, Authorization and Financial Release tracking|
+|6|Reconciliation of Individual payment|Support liquidation or advance or reimbursement to Financial Service Provider|
+|7|Payment Verification|Mitigate the risk of inaccurate FSP reports and fraud|
+|8|Grievances Redressals and Payees Communications|Ensure payment quality and direct communication with payees|
+|9|Roles base access|Uphold segragation of duties and data protection principles|
+|10|Reporting|Access process and output indicators|
 
 !!! note
 
