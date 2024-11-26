@@ -18,13 +18,14 @@ systems and platforms, ensuring smooth workflows and easy expansion as your need
 
 - [Country Report](reporting/index.md)
 
-- [Payment Gateway](pg/index.md)
+- [Payment Gateway](pg.md)
 
-- [Country Workspace](workspace/index.md)
+- [Country Workspace](workspace.md)
+
+- [RapidPro](rapidpro/index.md)
 
 - User Management Module  _(not yet released)_
 
-- [RapidPro](rapidpro/index.md)
 
 
 ## Hope supporting libraries
