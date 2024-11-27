@@ -20,7 +20,7 @@ Selenium tests run on the host machine.
 This is due to the fact that Selenium does not currently support the ARM64 architecture for Linux Docker images.
 This will require some more steps to be taken before running the tests.
 ### Prerequisites
-- pdm
+- uv
 
 ### Installation
 1. **Services**
@@ -45,19 +45,18 @@ This will require some more steps to be taken before running the tests.
 
 1. Install system requirements on MACOS:
    `brew install wkhtmltopdf pango postgis gdal`
-2. Crate virtualenvironment:
-    `pdm venv create`
+2. Create virtualenvironment:
+    `uv venv .venv --python 3.12.0`
 3. Register the created venv for the project with: 
-    `pdm use` 
+    `uv sync` 
 4. Activate your venv: 
-    `eval $(pdm venv activate)`
+    `source .venv/bin/activate`
 5. Check your environment:
     eg. `$python --version` -> see that it uses Python 3.12.*
 6. Install the packages:
-    `pdm sync --no-editable --no-self --no-isolation`
+    `uv build`
 7. Run the tests:
     ```bash
       source ./development_tools/local_selenium_init.sh`
       python -m pytest -svvv tests/selenium --html-report=./report/report.html`
     ```
-

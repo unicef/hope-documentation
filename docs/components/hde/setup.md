@@ -5,7 +5,7 @@ tags:
 
 ## Prerequisites
 
-This project utilizes [PDM](https://pdm-project.org/) as the package manager for managing Python dependencies and environments. 
+This project utilizes [UV](https://docs.astral.sh/uv/) as the package manager for managing Python dependencies and environments. 
 
 To successfully set up and run this project, ensure that you have the following components in place:
 
