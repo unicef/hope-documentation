@@ -124,7 +124,7 @@ plugins:
       inline_refs: none
       list_definitions: true
       list_references: true
-      tooltip: heading
+#      tooltip: heading
 #  - ezlinks
   - gitsnippet
   - link-marker
