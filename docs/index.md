@@ -31,7 +31,6 @@ Summary: The HOPE system allows organization disbursing cash transfers to perfor
 |9|Roles base access|Uphold segragation of duties and data protection principles|
 |10|Reporting|Access process and output indicators|
 
-
 !!! note
 
     The source code for HOPE is fully open-source and available for anyone to explore, 

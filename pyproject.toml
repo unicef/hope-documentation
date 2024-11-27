@@ -34,15 +34,3 @@ dependencies = [
 ]
 requires-python = "==3.12.*"
 readme = "README.md"
-
-[build-system]
-requires = ["pdm-backend"]
-build-backend = "pdm.backend"
-
-[tool.pdm]
-distribution = false
-
-[tool.pdm.dev-dependencies]
-dev = [
-    "pdbpp>=0.10.3",
-]
