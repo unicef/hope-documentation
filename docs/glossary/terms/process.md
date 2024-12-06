@@ -26,6 +26,6 @@ Sometimes used as a term pre-intervention to talk about who we are targeting.</p
 
 ## Deduplication
 
---8<-- "components/hde/deduplication_description.md"
+It provides users with powerful capabilities to identify and remove duplicate records within the system, ensuring that data remains clean, consistent, and reliable.
 
 #

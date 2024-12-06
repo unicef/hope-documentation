@@ -14,7 +14,7 @@ systems and platforms, ensuring smooth workflows and easy expansion as your need
 
 - [Kobo](kobo/index.md) 
 
-- [DeduplicationEngine](hde/index.md)
+- [DeduplicationEngine](hde.md)
 
 - [Country Report](reporting/index.md)
 
