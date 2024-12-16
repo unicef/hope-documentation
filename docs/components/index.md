@@ -10,7 +10,7 @@ It’s built to be scalable, adaptable, and interoperable, making it simple to i
 systems and platforms, ensuring smooth workflows and easy expansion as your needs grow.
 
 
-- [Aurora](aurora/index.md) 
+- [Aurora](aurora.md) 
 
 - [Kobo](kobo/index.md) 
 
