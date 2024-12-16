@@ -9,4 +9,4 @@ tags:
 Reporting component of the HOPE ecosystem. 
 This component allows user to produce reports and keep them updated customizing filters and refreshing schedule.
 
-> <unicef.github.io/hope-country-report/>{:target="_blank"}
+> <https://unicef.github.io/hope-country-report/>{:target="_blank"}
