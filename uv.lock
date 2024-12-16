@@ -339,7 +339,7 @@ wheels = [
 [[package]]
 name = "hope"
 version = "2.0.0"
-source = { editable = "." }
+source = { virtual = "." }
 dependencies = [
     { name = "cairosvg" },
     { name = "django-environ" },

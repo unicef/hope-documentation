@@ -4,7 +4,7 @@ nav:
   - Aurora: aurora
   - Kobo: kobo
   - Payment Gateway: pg.md
-  - Country Report: reporting
+  - Country Report: cr.md
   - Deduplication: hde.md
   - RapidPro: rapidpro
   - Workspace: workspace.md

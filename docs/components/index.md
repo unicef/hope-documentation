@@ -16,7 +16,7 @@ systems and platforms, ensuring smooth workflows and easy expansion as your need
 
 - [DeduplicationEngine](hde.md)
 
-- [Country Report](reporting/index.md)
+- [Country Report](cr.md)
 
 - [Payment Gateway](pg.md)
 
