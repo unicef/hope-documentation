@@ -15,7 +15,4 @@ The strengths of Aurora are:
 - Straightforward architecture 
 - Custom form page (partner logos, header, footer, colors...)
 
-
-## Repository
-
-> Repo: <https://github.com/unicef/hope-aurora>
+> <unicef.github.io/hope-aurora/>{:target="_blank"}
