@@ -14,5 +14,6 @@ Hope is composed by different modules:
 - [Grievance](grievance.md)
 - [User Management](user.md)
 - [Activity Log](log.md)
+- [Dashboard](dashboard_metrics.md)
 
 [//]: # (The Basic process flow supported by HOPE is drafted [here]&#40;process.md&#41;)
