@@ -1,6 +1,6 @@
 # Dashboard Metrics Explained
 
-The Dashboard module offers insights into payment distribution, reach, and process completion for each business area but also a Global dasboard is available with all the countries wher Hope is implemented.
+The Dashboard module offers insights into payment distribution, reach, and process completion for each business area but also a Global dasboard is available with all the countries where Hope is implemented.
 
 The data generally includes payments associated with Payment Plans released (having statuses "ACCEPTED" or "FINISHED"), and excludes individual payments with statuses like "Transaction Erroneous", "Not Distributed", "Force failed", or "Manually Cancelled".
 
@@ -13,7 +13,6 @@ The data generally includes payments associated with Payment Plans released (hav
 *   **Source Fields**: `total_delivered_quantity` (from API response, derived from `Payment.delivered_quantity` or `Payment.entitlement_quantity`).
 *   **Frontend Logic**: Summed in `updateTopMetrics` function (`successfulPaymentsGroup.sum`).
 
----
 
 ## 2. Total Amount Paid (USD)
 
@@ -22,7 +21,6 @@ The data generally includes payments associated with Payment Plans released (hav
 *   **Source Fields**: `total_delivered_quantity_usd` (from API response, derived from `Payment.delivered_quantity_usd` or `Payment.entitlement_quantity_usd`).
 *   **Frontend Logic**: Summed in `updateTopMetrics` function (`successfulPaymentsGroupUSD.sum`).
 
----
 
 ## 3. Number of Payments
 
@@ -31,7 +29,6 @@ The data generally includes payments associated with Payment Plans released (hav
 *   **Source Fields**: `payments` (from API response, representing the count of payment records in each aggregated group).
 *   **Frontend Logic**: Summed in `updateTopMetrics` function (`totalPaymentsCount`).
 
----
 
 ## 4. Outstanding Payment (USD)
 
@@ -40,7 +37,6 @@ The data generally includes payments associated with Payment Plans released (hav
 *   **Source Fields**: `total_delivered_quantity_usd` (from API response).
 *   **Frontend Logic**: Summed in `updateTopMetrics` function (`pendingPaymentsGroupUSD.sum`), filtering for specific pending statuses.
 
----
 
 ## 5. Households Reached
 
@@ -49,7 +45,6 @@ The data generally includes payments associated with Payment Plans released (hav
 *   **Source Fields**: `households` (from API response, representing the count of unique households in each aggregated group).
 *   **Frontend Logic**: Summed in `updateTopMetrics` function (`householdsReached`).
 
----
 
 ## 6. Individuals Reached
 
@@ -67,7 +62,6 @@ The data generally includes payments associated with Payment Plans released (hav
 *   **Source Fields**: `children_counts` (from API response, derived from `Household.children_count`).
 *   **Frontend Logic**: Summed in `updateTopMetrics` function (`childrenReached`).
 
----
 
 ## 8. PWD Reached
 
@@ -76,7 +70,6 @@ The data generally includes payments associated with Payment Plans released (hav
 *   **Source Fields**: `pwd_counts` (from API response, derived from the calculated PWD count per household).
 *   **Frontend Logic**: Summed in `updateTopMetrics` function (`pwdReached`).
 
----
 
 ## 9. Reconciliation (%)
 
@@ -85,7 +78,6 @@ The data generally includes payments associated with Payment Plans released (hav
 *   **Source Fields**: `status` (from API response).
 *   **Frontend Logic**: Calculated in `updateTopMetrics` function (`reconciliationPercentage`).
 
----
 
 ## 10. Verification (%)
 
@@ -94,4 +86,3 @@ The data generally includes payments associated with Payment Plans released (hav
 *   **Source Fields**: `finished_payment_plans`, `total_payment_plans` (from API response).
 *   **Frontend Logic**: Calculated in `updateTopMetrics` function (`verificationPercentage`).
 
----
