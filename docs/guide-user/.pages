@@ -9,3 +9,4 @@ nav:
   - Grievance: grievance.md
   - User Management: user.md
   - Activity Log: log.md
+  - Dashboard: dashboard_metrics.md
